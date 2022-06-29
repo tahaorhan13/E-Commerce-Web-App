@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Tesbihtane</title>
+    <link rel="shortcut icon" href="/images/tesbihtanelogo.ico" type="image/x-icon">
+    <link href="~/js/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/js/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    @*<link href="~/css/style.css" rel="stylesheet" />*@
+    <script src="~/js/jquery/jquery.min.js"></script>
+    <script src="~/js/jquery/jquery.validate.js"></script>
+    <script src="~/js/jquery/jquery.validate.min.js"></script>
+    <script src="~/js/jquery/jquery.validate.unobtrusive.js"></script>
+
+</head>
+<body>
+    <header id="header">
+
+        @*<div class="col-md-4 clearfix">
+                <div class="logo pull-left">
+                    <a href="#"><img src="~/images/tesbihtane.png"/></a>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="mainmenu pull-left">
+
+                                <ul class="nav navbar-nav collapse navbar-collapse">
+                                    <li><a href="Product" class="active">Ana Sayfa</a></li>
+                                    <li class="dropdown"><a href="#">İş Ortaklarımız</a></li>
+                                    <li class="dropdown"><a href="#">Hakkımızda<i class=""></i></a></li>
+                                    <li><a href="Cart">Sepet</a></li>
+
+                            </ul>
+
+                            </div>
+                        </div>
+                        <a class="btn btn-success" href="Home/Login">Giriş Yap</a>
+                    </div>
+                </div>
+            </div>*@
+    </header>
+
+    @RenderBody()
+
+</body>
+</html>
+
+
+<script>
+    var accessLevel = parseInt(localStorage.getItem('AccessLevel'));
+    $(document).ready(function (e) {
+        if (accessLevel > 0) {
+
+            var head = document.getElementById("header");
+
+            var div1 = document.createElement("div");
+            var div2 = document.createElement("div");
+
+            var div3 = document.createElement("div");
+            var div4 = document.createElement("div");
+            var div5 = document.createElement("div");
+            var div6 = document.createElement("div");
+            var div7 = document.createElement("div");
+
+            var ul = document.createElement("ul");
+
+            var li1 = document.createElement("li");
+            var li2 = document.createElement("li");
+            var li3 = document.createElement("li");
+            var li4 = document.createElement("li");
+            var li5 = document.createElement("li");
+
+            var a1 = document.createElement("a");
+            var a2 = document.createElement("a");
+            var a3 = document.createElement("a");
+            var a4 = document.createElement("a");
+            var a5 = document.createElement("a");
+            var a6 = document.createElement("a");
+            var a7 = document.createElement("a");
+
+            var button = document.createElement("button");
+
+            var img = document.createElement("img");
+
+            console.log("girdi");
+
+            div1.className = "col-md-4 clearfix";
+            div2.className = "logo pull-left";
+
+            img.src = "/images/tesbihtane.png";
+            a2.innerHTML = "Anasayfa";
+            a3.innerHTML = "Hakkımızda";
+            a4.innerHTML = "İletişim";
+            a5.innerHTML = "Sepet";
+            a7.innerHTML = "Profil";
+            button.innerHTML = "Çıkış Yap";
+            button.type = "button";
+            div3.className = "header-bottom";
+            div4.className = "container";
+            div5.className = "row";
+            div6.className = "col-sm-9";
+            div7.className = "mainmenu pull-left";
+            ul.className = "nav navbar-nav collapse navbar-collapse";
+            a1.href = "/Home/Product";
+            a2.className = "active";
+            a2.href = "/Home/Product";
+            a3.href = "/Home/Hakkımızda";
+            a4.href = "/Home/İletisim";
+            a5.href = "/Home/Cart";
+            a7.href="/Home/Profile"
+            /*a6.href = "Login";*/
+
+            button.id = "exit";
+
+            li2.className = "dropdown";
+            li3.className = "dropdown";
+            a5.className = "dropdown";
+            button.className = "btn btn-danger";
+
+            a1.appendChild(img);
+            div2.appendChild(a1);
+            div1.appendChild(div2);
+            head.appendChild(div1);
+
+            li1.appendChild(a2);
+            li2.appendChild(a3);
+            li3.appendChild(a4);
+            li4.appendChild(a5);
+            li5.appendChild(a7);
+
+            ul.appendChild(li1);
+            ul.appendChild(li2);
+            ul.appendChild(li3);
+            ul.appendChild(li4);
+            ul.appendChild(li5);
+            div7.appendChild(ul);
+            div6.appendChild(div7);
+            div5.appendChild(div6);
+            div5.appendChild(button);
+            div4.appendChild(div5);
+            div3.appendChild(div4);
+
+            head.appendChild(div3);
+
+
+        }
+        else {
+            var head = document.getElementById("header");
+
+            var div1 = document.createElement("div");
+            var div2 = document.createElement("div");
+
+            var div3 = document.createElement("div");
+            var div4 = document.createElement("div");
+            var div5 = document.createElement("div");
+            var div6 = document.createElement("div");
+            var div7 = document.createElement("div");
+
+            var ul = document.createElement("ul");
+
+            var li1 = document.createElement("li");
+            var li2 = document.createElement("li");
+            var li3 = document.createElement("li");
+            var li4 = document.createElement("li");
+
+            var a1 = document.createElement("a");
+            var a2 = document.createElement("a");
+            var a3 = document.createElement("a");
+            var a4 = document.createElement("a");
+            /*var a5 = document.createElement("a");*/
+            var a6 = document.createElement("a");
+
+            var img = document.createElement("img");
+
+            console.log("girdi");
+
+            div1.className = "col-md-4 clearfix";
+            div2.className = "logo pull-left";
+
+            img.src = "/images/tesbihtane.png";
+            a2.innerHTML = "Anasayfa";
+            a3.innerHTML = "İletişim";
+            a4.innerHTML = "Hakkımızda";
+            /*a5.innerHTML = "Sepet";*/
+            a6.innerHTML = "Giriş Yap";
+
+            div3.className = "header-bottom";
+            div4.className = "container";
+            div5.className = "row";
+            div6.className = "col-sm-9";
+            div7.className = "mainmenu pull-left";
+            ul.className = "nav navbar-nav collapse navbar-collapse";
+            a1.href = "/Home/Product";
+            a2.className = "active";
+            a2.href = "/Home/Product";
+            a3.href = "/Home/İletisim";
+            a4.href = "/Home/Hakkımızda";
+            /*a5.href = "Cart";*/
+            a6.href = "/Home/Login";
+            li2.className = "dropdown";
+            li3.className = "dropdown";
+            /*a5.className = "dropdown";*/
+            a6.className = "btn btn-success";
+
+            a1.appendChild(img);
+            div2.appendChild(a1);
+            div1.appendChild(div2);
+            head.appendChild(div1);
+
+            li1.appendChild(a2);
+            li2.appendChild(a3);
+            li3.appendChild(a4);
+            /*li4.appendChild(a5);*/
+
+            ul.appendChild(li1);
+            ul.appendChild(li2);
+            ul.appendChild(li3);
+            ul.appendChild(li4);
+            div7.appendChild(ul);
+            div6.appendChild(div7);
+            div5.appendChild(div6);
+            div5.appendChild(a6);
+            div4.appendChild(div5);
+            div3.appendChild(div4);
+
+            head.appendChild(div3);
+        }
+
+
+
+
+    });
+
+    $(document).on('click','#exit', function () {
+        console.log("girdi");
+        localStorage.clear();
+        window.location.reload();
+    });
+
+
+
+</script>

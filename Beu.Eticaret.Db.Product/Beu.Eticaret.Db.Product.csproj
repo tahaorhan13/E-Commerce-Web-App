@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Beu.Eticaret.Db.PostgreSQL\Beu.Eticaret.Db.PostgreSQL.csproj" />
+  </ItemGroup>
+
+</Project>

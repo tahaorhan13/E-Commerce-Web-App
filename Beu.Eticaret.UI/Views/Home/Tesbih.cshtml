@@ -1,0 +1,202 @@
+﻿@{ Layout = "~/Views/Menus/_MenuLayout.cshtml"; }
+
+
+<head>
+    <link href="~/css/animate.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/main1.css" rel="stylesheet" />
+    <link href="~/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="~/css/price-range.css" rel="stylesheet" />
+    <link href="~/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/popup.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+          rel="stylesheet" />
+    @*<link href="~/css/popup.css" rel="stylesheet" />*@
+    @*<link href="~/css/login.css" rel="stylesheet" />*@
+</head>
+<body>
+    <section>
+        <div class="container">
+            <img src="~/images/Banner.jpg" />
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div>
+                    <h2>Kategoriler</h2>
+                    <div class="panel-group category-products" id="accordian">
+                        <!--category-productsr-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordian" href="/Home/Tesbih">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                        Tesbih
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordian" href="/Home/Yüzük">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                        Yüzük
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordian" href="/Home/Kolye">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                        Kolye
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordian" href="/Home/Bileklik">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                        Bileklik
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordian" href="/Home/Kupe">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                        Küpe
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+
+                    </div><!--/category-productsr-->
+
+                </div>
+            </div>
+            <div class="col-sm-9 padding-right">
+                <div id="divMenu" class="features_items">
+
+                    @*<div class="col-sm-4">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <div class="productinfo text-center">
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+                    <div id="simpleModal" class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Customer Details Form</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    I love ASPSnippets!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="~/js/jquery/jquery.js"></script>
+<script src="~/js/app.js"></script>
+<script src="~/js/app.api.js"></script>
+<script src="~/js/app.api.cart.js"></script>
+<script>var productId = 1;
+    var apiCart = new app.api.cart.Cart();
+    var userId = parseInt(localStorage.getItem('Id'));
+    $.ajax({
+        type: 'POST',
+        url: "https://localhost:44315/Product/Tesbih/List",
+        data: JSON.stringify({ 'Id': productId }),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            var xDiv = document.getElementById("divMenu");
+
+            for (let z = 0; z <= data.value.length; z++) {
+                var div1 = document.createElement("div");
+                var div2 = document.createElement("div");
+                var div3 = document.createElement("div");
+                var div4 = document.createElement("div");
+                var button = document.createElement("button");
+                var h = document.createElement("h");
+                var p = document.createElement("p");
+                /*var a = document.createElement("a");*/
+                var img = document.createElement("img");
+                div1.className = "col-sm-4";
+                div2.className = "product-image-wrapper";
+                div3.className = "single-products";
+                div4.className = "productinfo text-center";
+                p.innerHTML = data.value[z].productName;
+                h.innerHTML = data.value[z].productPrice;
+                button.innerHTML = "Add to Cart";
+                button.className = "btn btn-warning";
+                button.id = "add" + z;
+                button.type = "button";
+                img.id = "src" + z;
+                img.src = data.value[z].productImage;
+                img.style.height = '268px';
+                img.style.width = '249px';
+                div4.className = "add";
+                h.id = "txtP" + z;
+                p.id = "txtN" + z;
+                div3.appendChild(div4);
+                div2.appendChild(div3);
+                div1.appendChild(div2);
+                xDiv.appendChild(div1);
+                div4.appendChild(img);
+                div4.appendChild(h);
+                div4.appendChild(p);
+                div4.appendChild(button);
+            }
+        },
+    });
+
+        //$(document)
+        //    .on('click', '#add2', function (e) {
+        //        var data = {
+        //            Name: $("#txtName").html(),
+        //            Price: $("#txtPrice").html(),
+        //            UserId: userId,
+        //            ProductImage: $("#src").attr('src'),
+        //        };
+        //        console.log(data);
+        //        apiCart.add({ Name: data.Name, Price: data.Price, UserId: data.UserId, ProductImage: data.ProductImage }, function (r) {
+        //            if (r.Error)
+        //                return;
+        //        });
+        //    });</script>
+
+
+<script src="~/js/filetransactions/addcart.js"></script>
+
+

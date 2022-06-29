@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] Sepet</title>
+    <link rel="shortcut icon" href="/images/tesbihtanelogo.ico" type="image/x-icon">
+    <link href="~/css/cart.css" rel="stylesheet" />
+    <link href="~/css/popup.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+          rel="stylesheet" />
+    <script>
+        var accesToken = localStorage.getItem("Access-Token");
+        if (accesToken == null || accesToken == 0) {
+            window.location.href = "/Home/AccessDenied";
+        }
+    </script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1 class="heading">
+            <ion-icon name="cart-outline"></ion-icon> Shopping Cart
+        </h1>
+
+        <div class="item-flex">
+            <section class="checkout">
+
+                <h2 class="section-heading">Payment Details</h2>
+
+                <div class="payment-form">
+
+                    <div class="payment-method">
+
+                        <button class="method selected">
+                            <ion-icon name="card"></ion-icon>
+
+                            <span>Credit Card</span>
+
+                            <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
+                        </button>
+
+                        @*<button class="method">
+                            <ion-icon name="logo-paypal"></ion-icon>
+
+                            <span>PayPal</span>
+
+                            <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
+                        </button>*@
+
+                    </div>
+
+                    <form action="#" method="post">
+
+                        <div class="cardholder-name">
+                            <label for="cardholder-name" class="label-default">Cardholder name</label>
+                            <input type="text" name="name" id="name" class="input-default" onkeyup="form_kontrol()">
+                        </div>
+
+                        <div class="card-number">
+                            <label for="card-number" class="label-default">Card number</label>
+                            <input type="number" name="card-number" id="number" class="input-default" required>
+                        </div>
+
+                        <div class="input-flex">
+
+                            <div class="expire-date">
+                                <label for="expire-date" class="label-default">Expiration date</label>
+
+                                <div class="input-flex">
+
+                                    <input type="number" name="day1" id="day1" placeholder="31" min="1" max="31"
+                                           class="input-default" required>
+                                    /
+                                    <input type="number" name="month" id="day2" placeholder="12" min="1" max="12"
+                                           class="input-default" required>
+
+                                </div>
+                            </div>
+
+                            <div class="cvv">
+                                <label for="cvv" class="label-default">CVV</label>
+                                <input type="number" name="cvv" id="cvv" class="input-default">
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+                @*<button class="btn btn-primary" href="popup1">
+                        Pay
+                    </button>*@
+
+                <a href="#modal-opened" class="link-1" id="btn1">PAY</a>
+
+                <div class="modal-container" id="modal-opened">
+                    <div class="modal">
+
+                        <div class="modal__details">
+                            <h1 class="modal__title">Ödeme İşlemi Başarılı</h1>
+                            <p class="modal__description">Sağ üstten bu ekranı kapatabilirsiniz.</p>
+                        </div>
+
+                        <p class="modal__text">Beun.Eticaret sitemizden alışveriş yaptığınız için teşekkür ederiz.</p>
+
+                        <a href="#modal-closed" class="link-2"></a>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="cart">
+                <div class="cart-item-box" id="divMenu">
+                    <h2 class="section-heading">Order Summery</h2>
+                    @*<div class="product-card">
+                        div2
+                        <div class="card" >*@
+                    @*<div class="img-box">
+                                <img src="/images/product12.jpg" alt="Green tomatoes" width="80px" class="product-img">
+                            </div>
+                           div4
+                        <div class="detail">
+
+                            <h4 class="product-name">Kazak</h4>
+                           div5
+                            <div class="wrapper">
+                           div6
+                                <div class="product-qty">
+                                    <button id="decrement">
+                                        <ion-icon name="remove-outline"></ion-icon>
+                                    </button>*@
+
+                    @*<span id="quantity">1</span>*@
+
+                    @*<button id="increment">
+                                         <ion-icon name="add-outline"></ion-icon>
+                                     </button>
+                                 </div>
+                                         div7
+                                 <div class="price">
+                                     <span id="price">10</span>
+                                 </div>
+
+                             </div>
+
+                         </div>
+
+                         <button class="product-close-btn">
+                        <ion-icon name="close-outline"></ion-icon>
+                        </button>*@
+                    <!--</div>
+
+                    </div>-->
+
+                </div>
+                <div id="cartId">
+                    @*<div class="wrapper">
+                            <div class="amount">
+                                <div class="total">
+                                    <span>Total</span> <span>$ <span id="total">2.15</span></span>
+                                </div>
+                            </div>
+                        </div>*@
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+    <script src="~/js/jquery/jquery.js"></script>
+    <script src="~/js/app.js"></script>
+    <script src="~/js/app.api.js"></script>
+    <script src="~/js/app.api.cart.js"></script>
+    <script>
+
+        var userId = parseInt(localStorage.getItem('Id'));
+        var apiCart = new app.api.cart.Cart();
+        var x = 0;
+        $.ajax({
+            type: 'POST',
+            url: "https://localhost:44315/Cart/Cart/List",
+            data: JSON.stringify({ 'UserId': userId }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                /*localStorage.setItem("Id", data.Value.Id);*/
+
+                var xDiv = document.getElementById("divMenu");
+                var yDiv = document.getElementById("cartId");
+                var div8 = document.createElement("div");
+                var div9 = document.createElement("div");
+                var div10 = document.createElement("div");
+
+                var span3 = document.createElement("span");
+                var span4 = document.createElement("span");
+                var span5 = document.createElement("span");
+
+                div8.className = "wrapper";
+                div9.className = "amount";
+                div10.className = "total";
+                span3.textContent = "Total";
+                span4.textContent = "$";
+                yDiv.appendChild(div8);
+                div8.appendChild(div9);
+                div9.appendChild(div10);
+                div10.appendChild(span3);
+                span4.appendChild(span5);
+                div10.appendChild(span4);
+
+
+                /*x = data.Value[0].Price + data.Value[1].Price + data.Value[2].Price;*/
+                var dizi = [];
+
+                for (let z = 0; z <= data.Value.length; z++) {
+
+                    var div1 = document.createElement("div");
+                    var div2 = document.createElement("div");
+                    var div3 = document.createElement("div");
+                    var div4 = document.createElement("div");
+                    var div5 = document.createElement("div");
+                    var div6 = document.createElement("div");
+                    var div7 = document.createElement("div");
+
+
+                    var but1 = document.createElement("button");
+                    var but2 = document.createElement("button");
+                    var but3 = document.createElement("button");
+
+
+                    var span = document.createElement("span");
+                    var span2 = document.createElement("span");
+                    dizi.push(data.Value[z].Price)
+                    x += Number(dizi[z]);
+
+                    var img = document.createElement("img");
+                    var h = document.createElement("h");
+                    var h1 = document.createElement("h");
+                    var ion1 = document.createElement("ion-icon");
+                    var ion2 = document.createElement("ion-icon");
+                    var ion3 = document.createElement("ion-icon");
+
+                    div1.className = "product-card";
+                    img.className = "product-img";
+                    img.style.width = "80px";
+                    div2.className = "card";
+                    h.className = "product-name";
+                    div3.className = "img-box";
+                    div4.className = "detail";
+                    div5.className = "wrapper";
+                    div6.className = "product-qty";
+                    div7.className = "price";
+                    but1.id = "decrement" + z;
+                    but2.id = "increment" + z;
+                    but2.className = "bx bx-plus";
+                    but1.type = "button";
+                    but2.type = "button";
+                    but3.className = "product-close-btn";
+                    but3.id = "del" + z;
+                    but3.type = "button";
+
+                    span.id = "quantity"+z;
+                    span2.id = "price"+z;
+                    span.textContent = 1;
+                    span5.id = "total";
+                    span5.innerHTML = x;
+                    
+                    ion1.name = "remove-outline";
+                    ion2.name = "add-outline";
+                    ion3.name = "close-outline";
+
+                    h1.innerHTML = data.Value[z].Id;
+                    h1.id = "h" + z;
+                    h.innerHTML = data.Value[z].Name;
+                    span2.innerHTML = data.Value[z].Price;
+                    img.src = data.Value[z].ProductImage;
+
+                    but1.appendChild(ion1);
+                    but2.appendChild(ion2);
+                    but3.appendChild(ion3);
+
+                    xDiv.appendChild(div1);
+                    div1.appendChild(div2);
+                    div2.appendChild(div3);
+                    div2.appendChild(div4);
+                    div3.appendChild(img);
+                    div4.appendChild(h);
+                    div4.appendChild(h1);
+                    div4.appendChild(div5);
+                    div4.appendChild(but3);
+                    div6.appendChild(but1);
+                    div6.appendChild(span);
+                    div6.appendChild(but2);
+                    div7.appendChild(span2);
+                    div5.appendChild(div6);
+                    div5.appendChild(div7);
+
+
+                    $(document).ready(function () {
+                        $("#h" + z).hide();
+                    });                   
+
+                }
+            },
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $("#btn1").hide();
+            $("#name").change(function () {
+                if ($("#name").val().length == 0)
+                    $("#btn1").hide();
+                else
+                    $("#btn1").show();
+            })
+        });
+
+
+    </script>
+    <script src="~/js/cart.js"></script>
+    <script src="~/js/filetransactions/delcart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

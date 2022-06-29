@@ -1,0 +1,463 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.Product\\Beu.Eticaret.Dal.Product.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.PostgreSQL\\Beu.Eticaret.Dal.PostgreSQL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.PostgreSQL\\Beu.Eticaret.Dal.PostgreSQL.csproj",
+        "projectName": "Beu.Eticaret.Dal.PostgreSQL",
+        "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.PostgreSQL\\Beu.Eticaret.Dal.PostgreSQL.csproj",
+        "packagesPath": "C:\\Users\\tahao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.PostgreSQL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tahao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.PostgreSQL\\Beu.Eticaret.Db.PostgreSQL.csproj": {
+                "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.PostgreSQL\\Beu.Eticaret.Db.PostgreSQL.csproj"
+              },
+              "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity\\Beu.Eticaret.Entity.csproj": {
+                "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity\\Beu.Eticaret.Entity.csproj"
+              },
+              "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret\\Beu.Eticaret.csproj": {
+                "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret\\Beu.Eticaret.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.Product\\Beu.Eticaret.Dal.Product.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.Product\\Beu.Eticaret.Dal.Product.csproj",
+        "projectName": "Beu.Eticaret.Dal.Product",
+        "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.Product\\Beu.Eticaret.Dal.Product.csproj",
+        "packagesPath": "C:\\Users\\tahao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.Product\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tahao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.PostgreSQL\\Beu.Eticaret.Dal.PostgreSQL.csproj": {
+                "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Dal.PostgreSQL\\Beu.Eticaret.Dal.PostgreSQL.csproj"
+              },
+              "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.Product\\Beu.Eticaret.Db.Product.csproj": {
+                "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.Product\\Beu.Eticaret.Db.Product.csproj"
+              },
+              "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity.Product\\Beu.Eticaret.Entity.Product.csproj": {
+                "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity.Product\\Beu.Eticaret.Entity.Product.csproj"
+              },
+              "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret\\Beu.Eticaret.csproj": {
+                "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret\\Beu.Eticaret.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.PostgreSQL\\Beu.Eticaret.Db.PostgreSQL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.PostgreSQL\\Beu.Eticaret.Db.PostgreSQL.csproj",
+        "projectName": "Beu.Eticaret.Db.PostgreSQL",
+        "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.PostgreSQL\\Beu.Eticaret.Db.PostgreSQL.csproj",
+        "packagesPath": "C:\\Users\\tahao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.PostgreSQL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tahao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.Product\\Beu.Eticaret.Db.Product.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.Product\\Beu.Eticaret.Db.Product.csproj",
+        "projectName": "Beu.Eticaret.Db.Product",
+        "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.Product\\Beu.Eticaret.Db.Product.csproj",
+        "packagesPath": "C:\\Users\\tahao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.Product\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tahao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.PostgreSQL\\Beu.Eticaret.Db.PostgreSQL.csproj": {
+                "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Db.PostgreSQL\\Beu.Eticaret.Db.PostgreSQL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity.Product\\Beu.Eticaret.Entity.Product.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity.Product\\Beu.Eticaret.Entity.Product.csproj",
+        "projectName": "Beu.Eticaret.Entity.Product",
+        "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity.Product\\Beu.Eticaret.Entity.Product.csproj",
+        "packagesPath": "C:\\Users\\tahao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity.Product\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tahao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity\\Beu.Eticaret.Entity.csproj": {
+                "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity\\Beu.Eticaret.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity\\Beu.Eticaret.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity\\Beu.Eticaret.Entity.csproj",
+        "projectName": "Beu.Eticaret.Entity",
+        "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity\\Beu.Eticaret.Entity.csproj",
+        "packagesPath": "C:\\Users\\tahao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tahao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret\\Beu.Eticaret.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret\\Beu.Eticaret.csproj",
+        "projectName": "Beu.Eticaret",
+        "projectPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret\\Beu.Eticaret.csproj",
+        "packagesPath": "C:\\Users\\tahao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tahao\\Desktop\\eticaret-main\\Beu.Eticaret\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tahao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

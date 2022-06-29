@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Beu.Eticaret.Entity.System/1.0.0": {
+        "dependencies": {
+          "Beu.Eticaret.Entity": "1.0.0"
+        },
+        "runtime": {
+          "Beu.Eticaret.Entity.System.dll": {}
+        }
+      },
+      "Beu.Eticaret.Entity/1.0.0": {
+        "runtime": {
+          "Beu.Eticaret.Entity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Beu.Eticaret.Entity.System/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Beu.Eticaret.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

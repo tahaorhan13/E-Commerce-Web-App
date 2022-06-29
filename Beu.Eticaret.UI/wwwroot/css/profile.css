@@ -1,0 +1,111 @@
+﻿body {
+    padding: 0;
+    margin: 0 auto;
+    background: url(images/register_background.jpg) no-repeat;
+}
+
+.vid-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("register_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgvid.back {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+.inner {
+    position: absolute;
+}
+
+.inner-container {
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    overflow: hidden;
+}
+
+.bgvid.inner {
+    top: calc(-50vh + 200px);
+    left: calc(-50vw + 200px);
+}
+
+.box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica;
+    color: #fff;
+    background: rgba(0,0,0,0.13);
+    padding: 30px 0px;
+    backdrop-filter: blur(5px); /*box yada formu sadece blurla�t�r�r*/
+}
+
+    .box h1 {
+        text-align: center;
+        margin: 30px 0;
+        font-size: 30px;
+    }
+
+    .box a {
+        color: aliceblue;
+        padding: 140px;
+        font-size: 15px;
+    }
+
+.docs-creator {
+    color: #006699;
+    text-decoration: none;
+}
+
+.box input {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    border: 0;
+}
+
+    .box input:focus, .box input:active, .box button:focus, .box button:active {
+        outline: none;
+    }
+
+.box button {
+    background: #006699;
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    width: 330px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+
+    .box button:active {
+        background: #27ae60;
+    }
+
+.box p {
+    font-size: 14px;
+    text-align: center;
+}
+
+    .box p span {
+        cursor: pointer;
+        color: #666;
+    }

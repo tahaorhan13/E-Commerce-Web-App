@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Beu.Eticaret.Bll\Beu.Eticaret.Bll.csproj" />
+    <ProjectReference Include="..\Beu.Eticaret.Dal.Cart\Beu.Eticaret.Dal.Cart.csproj" />
+    <ProjectReference Include="..\Beu.Eticaret.Web\Beu.Eticaret.Web.csproj" />
+  </ItemGroup>
+
+</Project>
